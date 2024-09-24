@@ -4,5 +4,5 @@ var peso = document.querySelector('#peso')
 var resultado = document.querySelector('span')
 
 function calcular(){
-    resultado.innerHTML = (13.75 * parseInt(peso)) + (5 + parseInt(altura)) - (6.75 * parseInt(idade)) + 66.5
+    resultado = (13.75 * peso.value) + (5 + altura.value) - (6.75 * idade.value) + 66.5
 }
