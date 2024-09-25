@@ -14,16 +14,35 @@
     <body>
         <h1><b>Cálculo de Taxa Metabólica Basal</b></h1>
 
+
+        <!--GENERO-->
+        <p><b>GENERO BIOLÓGICO</b></p>
+        <input type="radio" id="masc" name="sexo" value="masc">
+        <label for="masc">MASCULINO</label>
+        <br>
+
+        <input type="radio" id="fem" name="sexo" value="fem">
+        <label for="fem">FEMININO</label>
+        <br><br>
+
+
+        <!--PESO-->
         <p><b>PESO (em kg)</b></p>
-        <input id="peso" type="number"/><br />
+        <input id="peso" type="number" required>
+        <br><br>
 
+        <!--ALTURA-->
         <p><b>ALTURA (em centímetros)</b></p>
-        <input id="altura" type="number"/><br />
+        <input id="altura" type="number" required>
+        <br><br>
 
+        <!--IDADE-->
         <p><b>IDADE (em anos)</b></p>
-        <input id="idade" type="number"/><br />
+        <input id="idade" type="number" required>
+        <br><br>
          
-        <br /><button onclick="calcular()"><b>CALCULAR</b></button>
+        <!--BUTTONS-->
+        <button type="submit" onclick="calcular()"><b>CALCULAR</b></button>
 
         <br/><br/>
         A TMP do aluno é: <span></span>
